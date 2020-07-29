@@ -1,0 +1,8 @@
+[
+  {
+    "remote": "DoritosMotorola",
+    "repository": "doritos_device_motorola_doha",
+    "target_path": "device/motorola/doha",
+    "revision": "ten"
+  }
+]
