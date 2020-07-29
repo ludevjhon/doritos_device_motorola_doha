@@ -34,6 +34,9 @@ $(call inherit-product, device/motorola/doha/device.mk)
 # Gapps
 TARGET_GAPPS_ARCH := arm64
 
+# Bootanimation
+TARGET_BOOT_ANIMATION_RES := 1080
+
 # A/B updater
 AB_OTA_UPDATER := true
 
