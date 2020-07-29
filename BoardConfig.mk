@@ -1,4 +1,4 @@
-# Copyright (C) 2010 The Android Open Source Project
+# Copyright (C) 2020 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -25,22 +25,29 @@ TARGET_NO_RECOVERY := false
 
 TARGET_OTA_ASSERT_DEVICE := doha
 
-TARGET_BOOTLOADER_BOARD_NAME := trinket
-TARGET_BOARD_PLATFORM := trinket
-TARGET_BOARD_PLATFORM_GPU := qcom-adreno610
 
-# Architecture
+# Platform
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
 TARGET_CPU_ABI := arm64-v8a
 TARGET_CPU_ABI2 :=
 TARGET_CPU_VARIANT := generic
+TARGET_CPU_VARIANT_RUNTIME := kryo
+TARGET_CPU_SMP := true
 
 TARGET_2ND_ARCH := arm
-TARGET_2ND_ARCH_VARIANT := armv7-a-neon
+TARGET_2ND_ARCH_VARIANT := armv8-a
 TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
-TARGET_2ND_CPU_VARIANT := cortex-a9
+TARGET_2ND_CPU_VARIANT := generic
+TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a73
+ARCH_ARM_HAVE_TLS_REGISTER := true
+
+# Board
+BOARD_USES_QCOM_HARDWARE := true
+TARGET_BOOTLOADER_BOARD_NAME := trinket
+TARGET_BOARD_PLATFORM := trinket
+TARGET_BOARD_PLATFORM_GPU := qcom-adreno610
 
 TARGET_USE_QCOM_BIONIC_OPTIMIZATION := true
 TARGET_USES_64_BIT_BINDER := true
