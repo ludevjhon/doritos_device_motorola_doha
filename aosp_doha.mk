@@ -31,6 +31,9 @@ $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 # Device
 $(call inherit-product, device/motorola/doha/device.mk)
 
+# Gapps
+TARGET_GAPPS_ARCH := arm64
+
 # A/B updater
 AB_OTA_UPDATER := true
 
