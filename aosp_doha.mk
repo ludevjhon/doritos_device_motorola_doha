@@ -79,4 +79,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
      PRIVATE_BUILD_DESC= "doha-user 9.0.0 PPIS29.65-24-2 release-keys"
 
 # Fingerprint
-?BUILD_FINGERPRINT := motorola/doha_retail/doha:
+BUILD_FINGERPRINT := motorola/doha/doha:10/QPI30.28-Q3-28-13/23080:user/release-keys
